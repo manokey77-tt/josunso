@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>조선소 임직원 특별 혜택 - LG유플러스</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* 모바일 앱 화면 느낌을 주기 위한 설정 */
+        body { background-color: #f3f4f6; }
+        .mobile-container {
+            max-width: 480px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+            position: relative;
+            padding-bottom: 90px; /* 하단 버튼 공간 */
+        }
+        /* 스크롤바 숨기기 (모바일 뷰용) */
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        /* 팝업 애니메이션 */
+        .fade-in { animation: fadeIn 0.3s ease-in-out; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    </style>
+</head>
+<body class="text-gray-800 font-sans antialiased">
+
+<div class="mobile-container">
+
+    <!-- 1 & 2단계: 히어로 섹션 -->
+    <section class="relative bg-slate-800 text-white overflow-hidden pb-12">
+        <!-- 첨부된 이미지를 배경으로 적용 -->
+        <img src="mainbanner.jpg" alt="식단표 연계 메인 배너" class="absolute inset-0 w-full h-full object-cover">
+        <!-- 텍스트 가독성을 위한 어두운 그라데이션 오버레이 -->
+        <div class="absolute inset-0 bg-gradient-to-b from-slate-900/80 via-slate-800/60 to-slate-900/90"></div>
+        
+        <div class="relative z-10 px-5 pt-8 pb-4 text-center">
+            <p class="text-slate-300 text-sm font-medium mb-2 mt-4">SKT/KT 고객님, 통신사 이동의 기회!</p>
+            <h1 class="text-3xl font-extrabold leading-tight mb-4 break-keep">
+                쓰던 기계 그대로<br>인터넷, TV까지 결합하면
+            </h1>
+            
+            <!-- 시각적 중심: 선물 상자 3D 느낌 (이모지로 대체) -->
+            <div class="text-7xl my-6 drop-shadow-2xl animate-bounce">
+                🎁
+            </div>
+            
+            <!-- 숫자 강조 -->
+            <div class="bg-gradient-to-r from-fuchsia-600 to-pink-500 rounded-xl p-4 shadow-lg border border-pink-400">
+                <p class="text-sm font-bold text-pink-100 mb-1">조선소 임직원 단독</p>
+                <p class="text-4xl font-extrabold text-white">최대 100만 원 혜택</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3단계: 주요 혜택 및 상품 구성 -->
+    <section class="px-5 py-8 bg-gray-50">
+        <h2 class="text-xl font-bold mb-5 text-center text-gray-900">놓칠 수 없는 2가지 특권</h2>
+        
+        <!-- 혜택 1: 결합 -->
+        <div class="bg-white rounded-2xl p-5 mb-4 shadow-sm border border-gray-100 relative overflow-hidden">
+            <div class="absolute top-0 right-0 bg-fuchsia-600 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">BEST</div>
+            <div class="flex items-center mb-3">
+                <img src="uit.jpg" alt="USIM + 인터넷/TV 아이콘" class="w-12 h-12 mr-3 object-contain drop-shadow-sm">
+                <div>
+                    <h3 class="font-bold text-lg">USIM 번호이동 + 인터넷/TV</h3>
+                    <p class="text-gray-500 text-sm">기기 변경 없이 통신비만 낮추세요</p>
+                </div>
+            </div>
+            <div class="bg-fuchsia-50 rounded-lg p-3 text-center">
+                <p class="text-fuchsia-700 font-extrabold text-xl">최대 100만 원 지원</p>
+                <p class="text-gray-500 text-xs mt-1">*유심만 통신사 이동해도 30만 원 제공</p>
+            </div>
+        </div>
+
+        <!-- 혜택 2: 기기 -->
+        <div class="bg-white rounded-2xl p-5 mb-6 shadow-sm border border-gray-100">
+            <div class="flex items-center mb-3">
+                <img src="S26-1.jpg" alt="갤럭시 S26" class="w-12 h-12 mr-3 object-contain drop-shadow-sm">
+                <div>
+                    <h3 class="font-bold text-lg">갤럭시 S26 임직원 특가</h3>
+                    <p class="text-gray-500 text-sm">최신 프리미엄 스마트폰 파격 할인</p>
+                </div>
+            </div>
+            <div class="bg-gray-100 rounded-lg p-3 text-center">
+                <p class="text-gray-800 font-extrabold text-xl">비공개 파격 지원금 적용</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4단계: 신뢰 구축 및 소셜 프루프 (파스텔 톤으로 수정됨) -->
+    <section class="px-5 py-10 bg-indigo-50 text-slate-800">
+        <!-- 빠른 전화 상담 섹션 추가 -->
+        <div class="bg-white rounded-2xl p-6 border border-indigo-200 shadow-md text-center">
+            <div class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-indigo-100 text-indigo-600 mb-3 text-2xl drop-shadow-sm">
+                📞
+            </div>
+            <h3 class="text-lg font-bold text-slate-800 mb-1">빠른 전화 상담</h3>
+            <p class="text-sm text-slate-500 mb-4 break-keep">궁금한 점이 있으시다면 언제든 편하게 전화주세요!</p>
+            
+            <div class="bg-indigo-50 rounded-xl p-4 mb-4 border border-indigo-100">
+                <p class="text-xs text-indigo-500 font-bold mb-1">조선소 전담 매니저</p>
+                <div class="flex items-center justify-center space-x-2">
+                    <span class="text-lg font-extrabold text-indigo-900">곽환영</span>
+                    <span class="text-indigo-300">|</span>
+                    <a href="tel:01081815811" class="text-lg font-extrabold text-indigo-600 hover:text-indigo-800">010-8181-5811</a>
+                </div>
+            </div>
+            
+            <div class="flex gap-2 w-full">
+                <a href="tel:01081815811" class="flex-1 flex items-center justify-center bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3.5 rounded-xl shadow-sm transition-colors text-sm">
+                    <span class="mr-1 text-lg">📞</span> 전화걸기
+                </a>
+                <a href="sms:01081815811" class="flex-1 flex items-center justify-center bg-indigo-100 hover:bg-indigo-200 text-indigo-800 font-bold py-3.5 rounded-xl shadow-sm transition-colors text-sm border border-indigo-200">
+                    <span class="mr-1 text-lg">💬</span> 문자보내기
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="h-10 bg-indigo-50"></div> <!-- 여백 -->
+
+    <!-- 5단계: 플로팅 버튼 & 하단 고정 버튼 -->
+    <!-- 우측 하단 둥근 플로팅 버튼 (상담) -->
+    <div class="fixed bottom-28 right-4 sm:right-[calc(50%-220px)] z-40">
+        <button onclick="openModal('kakao')" class="bg-yellow-400 text-yellow-900 w-14 h-14 rounded-full shadow-xl flex items-center justify-center text-2xl border-2 border-white animate-bounce">
+            💬
+        </button>
+    </div>
+
+    <!-- 하단 고정 메인 버튼 영역 -->
+    <div class="fixed bottom-0 left-0 w-full sm:w-[480px] sm:left-1/2 sm:-ml-[240px] bg-white border-t border-gray-200 p-4 z-50 shadow-[0_-5px_15px_rgba(0,0,0,0.05)]">
+        <button onclick="openModal('kakao')" class="w-full bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-extrabold text-lg py-4 rounded-xl shadow-md transition-colors">
+            지금 바로 최대 혜택 확인하기<br>
+            <span class="text-sm font-medium">(카카오톡 1:1 간편 문의)</span>
+        </button>
+    </div>
+
+    <!-- 팝업 모달 (사후 액션 유도) -->
+    <div id="cta-modal" class="fixed inset-0 bg-black/70 z-[60] hidden flex items-center justify-center px-4 fade-in">
+        <div class="bg-white rounded-2xl w-full max-w-sm overflow-hidden text-center shadow-2xl relative">
+            <button onclick="closeModal()" class="absolute top-3 right-4 text-gray-400 hover:text-gray-600 text-2xl">&times;</button>
+            
+            <div class="bg-amber-100 py-6">
+                <div class="text-5xl mb-2">☕</div>
+                <h3 class="font-extrabold text-xl text-amber-900">잠깐! 커피 쿠폰 먼저 챙기세요</h3>
+            </div>
+            
+            <div class="p-6">
+                <p class="text-gray-600 text-sm mb-5 break-keep">
+                    상담 전, <span class="font-bold text-fuchsia-600">본인인증하고 단골 등록</span>하시면<br>
+                    무조건 아이스 아메리카노를 쏩니다!
+                </p>
+                
+                <a href="#" onclick="alert('단골 등록(본인인증) 페이지로 이동합니다.'); closeModal();" class="block w-full bg-amber-500 text-white font-bold py-3 rounded-xl mb-3 hover:bg-amber-600 transition">
+                    👉 본인 인증하고 단골 등록하기
+                </a>
+                
+                <a href="#" onclick="alert('카카오톡 1:1 채팅방으로 이동합니다.'); closeModal();" class="block w-full bg-gray-100 text-gray-600 font-medium py-3 rounded-xl hover:bg-gray-200 transition text-sm">
+                    괜찮아요, 바로 카톡 문의할게요
+                </a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    // 모달(팝업) 제어
+    const modal = document.getElementById('cta-modal');
+    function openModal(type) {
+        modal.classList.remove('hidden');
+    }
+    function closeModal() {
+        modal.classList.add('hidden');
+    }
+</script>
+
+</body>
+</html>
